@@ -1407,7 +1407,7 @@ class TimeSeriesDataSet(Dataset):
                 a slice object which is directly used to overwrite indices, e.g. ``slice(-5, None)`` will overwrite
                 the last 5 values. Defaults to "decoder".
         """
-        values = torch.tensor(self.transform_values(variable, np.asarray(values).reshape(-1), inverse=False)).squeeze()
+        #values = torch.tensor(self.transform_values(variable, np.asarray(values).reshape(-1), inverse=False)).squeeze()
         assert target in [
             "all",
             "decoder",
